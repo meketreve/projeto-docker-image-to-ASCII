@@ -1,0 +1,81 @@
+Projeto Docker (Python) de Conversor de Imagem para Arte ASCII + README Completo
+
+Quero que você gere um projeto completo usando somente Python para criar um conversor de imagens para arte ASCII, executado dentro de contêineres Docker.
+O projeto será enviado para o GitHub, então gere tudo com padrão profissional.
+
+📌 Especificações do Projeto
+1. Funcionalidade
+
+Crie um serviço simples em Python com Flask ou FastAPI que:
+
+receba uma imagem (.png, .jpg, etc.) via upload
+
+converta a imagem para arte ASCII
+
+retorne o resultado:
+
+em texto puro
+
+ou salvando como .txt para download
+
+2. Entrega deve conter
+
+Estrutura completa de pastas
+
+Código Python funcional
+
+requirements.txt
+
+Dockerfile detalhado
+
+docker-compose.yml explicado
+
+Scripts de inicialização (se necessário)
+
+3. O README.md deve incluir
+
+Título do projeto
+
+Descrição clara
+
+GIF/ASCII ou diagrama da arquitetura (pode ser ASCII)
+
+Demonstração do funcionamento
+
+Como instalar Docker no Windows, Linux e Mac
+
+Como rodar usando:
+
+docker build & docker run
+
+docker-compose
+
+Explicação completa do Dockerfile
+
+Explicação completa do docker-compose
+
+Exemplo de requisição (upload de imagem)
+
+Melhorias futuras
+
+Créditos e licença
+
+4. No final da resposta, gere
+
+A estrutura ZIP simulada do projeto
+
+Resumo geral do que foi criado
+
+Sugestões de expansão do sistema
+
+5. Importante
+
+Usar exclusivamente Python
+
+Converter imagens usando PIL (Pillow)
+
+Não usar outras linguagens no projeto
+
+Código comentado e didático
+
+Container deve iniciar automaticamente o serviço Python

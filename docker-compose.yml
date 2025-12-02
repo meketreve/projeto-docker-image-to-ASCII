@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  image-to-ascii-app:
+    # Construir a imagem a partir do Dockerfile localizado em ./image_to_ascii
+    build: ./image_to_ascii
+    # Mapear a porta 5000 do contêiner para a porta 5000 do host
+    ports:
+      - "5000:5000"
+    # Montar o volume para facilitar o desenvolvimento (opcional)
+    # Qualquer alteração nos arquivos locais ./image_to_ascii será refletida no contêiner
+    volumes:
+      - ./image_to_ascii:/app
+    # Reiniciar o contêiner se ele parar inesperadamente
+    restart: always

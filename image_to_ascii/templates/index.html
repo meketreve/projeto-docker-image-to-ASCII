@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Imagem para Arte ASCII</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🖼️ Conversor de Imagem para Arte ASCII</h1>
+            <p>Faça o upload de uma imagem e veja a mágica acontecer!</p>
+        </header>
+
+        <div class="card">
+            <form action="/convert" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="file">Selecione uma imagem:</label>
+                    <input type="file" name="file" id="file" accept="image/*" required>
+                </div>
+
+                <div class="form-group options">
+                    <input type="checkbox" name="download_txt" id="download_txt" value="true">
+                    <label for="download_txt">Baixar resultado como .txt</label>
+                </div>
+
+                <button type="submit" class="btn">Converter</button>
+            </form>
+        </div>
+
+        {% if ascii_art %}
+        <div class="card result">
+            <h2>Resultado:</h2>
+            <pre>{{ ascii_art }}</pre>
+        </div>
+        {% endif %}
+
+        {% if error %}
+        <div class="card error">
+            <h2>Erro:</h2>
+            <p>{{ error }}</p>
+        </div>
+        {% endif %}
+
+        <footer>
+            <p>Desenvolvido com Python, Flask e Docker.</p>
+        </footer>
+    </div>
+</body>
+</html>

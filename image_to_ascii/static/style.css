@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #1c1e21;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #606770;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dddfe2;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #4b4f56;
+}
+
+.form-group input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccd0d5;
+    border-radius: 4px;
+    background-color: #f5f6f7;
+    cursor: pointer;
+}
+
+.form-group.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-group.options label {
+    margin: 0 0 0 10px;
+    font-weight: 400;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #166fe5;
+}
+
+footer {
+    margin-top: 30px;
+    color: #606770;
+    font-size: 0.9em;
+}
+
+pre {
+    background-color: #f5f6f7;
+    border: 1px solid #dddfe2;
+    padding: 20px;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: monospace;
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 4px;
+}
