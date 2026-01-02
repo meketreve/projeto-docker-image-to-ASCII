@@ -220,16 +220,18 @@ curl -X POST -F "file=@/caminho/para/sua/imagem.jpg" -F "download_txt=true" http
 *   **Persistência:** Opção de armazenar as imagens originais ou as artes ASCII geradas.
 *   **Kubernetes Deployment:** Configurações para implantação em um cluster Kubernetes.
 
-## 🤝 Créditos e Licença
+## 🤝 Créditos, Licença e Agradecimentos
 
-**Desenvolvido por:** [Seu Nome ou Nome da Organização]
+**Desenvolvido com o auxílio de:** IA Gemini do Google
+
+Este projeto foi desenvolvido utilizando o Gemini, uma ferramenta de inteligência artificial do Google, que auxiliou na criação do código, na estruturação do projeto, na elaboração da documentação e na resolução de bugs. O uso de IA permitiu acelerar o desenvolvimento e garantir a aplicação de boas práticas.
 
 Este projeto está licenciado sob a Licença MIT. Sinta-se à vontade para usar, modificar e distribuir o código, desde que as condições da licença sejam mantidas.
 
 ---
 **MIT License**
 
-Copyright (c) [Ano] [Seu Nome ou Nome da Organização]
+Copyright (c) [2025] 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
